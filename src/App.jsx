@@ -221,6 +221,7 @@ import TeacherRegister from "./pages/TeacherRegister";
 import StudentDashboard from "./pages/StudentDashboard";
 import TeacherDashboard from "./pages/TeacherDashboard";
 import UploadNotes from "./pages/UploadNotes";
+import Notes from "./pages/Notes";
 
 function App() {
   return (
@@ -235,6 +236,7 @@ function App() {
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
         <Route path="/upload-notes" element={<UploadNotes />} />
+        <Route path="/notes" element={<Notes />} />
       </Routes>
     </BrowserRouter>
   );

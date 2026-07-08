@@ -1,68 +1,96 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "./TeacherRegister.css";
 
-function TeacherRegister(){
+function TeacherRegister() {
 
-return(
+  const navigate = useNavigate();
 
-<div className="register-container">
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [department, setDepartment] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-<div className="register-card">
+  const handleRegister = () => {
 
-<h1>Teacher Registration</h1>
+    if (
+      name.trim() === "" ||
+      email.trim() === "" ||
+      department.trim() === "" ||
+      password.trim() === ""
+    ) {
+      setError("All fields are required.");
+      return;
+    }
 
-<form>
+    if (!email.includes("@")) {
+      setError("Enter a valid email.");
+      return;
+    }
 
-<input
-type="text"
-placeholder="Full Name"
-required
-/>
+    if (password.length < 6) {
+      setError("Password must be at least 6 characters.");
+      return;
+    }
 
-<input
-type="email"
-placeholder="Email"
-required
-/>
+    alert("Registration Successful!");
 
-<input
-type="text"
-placeholder="Department"
-required
-/>
+    navigate("/teacher-login");
+  };
 
-<input
-type="password"
-placeholder="Password"
-required
-/>
+  return (
 
-<button>
+    <div className="register-container">
 
-Register
+      <div className="register-card">
 
-</button>
+        <h1>Teacher Registration</h1>
 
-</form>
+        <input
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
 
-<p>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-Already have an account?
+        <input
+          type="text"
+          placeholder="Department"
+          value={department}
+          onChange={(e) => setDepartment(e.target.value)}
+        />
 
-<Link to="/teacher-login">
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
-Login
+        {error && <p className="error">{error}</p>}
 
-</Link>
+        <button onClick={handleRegister}>
+          Register
+        </button>
 
-</p>
+        <p>
+          Already have an account?
+          <Link to="/teacher-login"> Login</Link>
+        </p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-)
-
+  );
 }
 
 export default TeacherRegister;

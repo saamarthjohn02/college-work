@@ -86,3 +86,9 @@
     color:#1565c0;
 
 }
+.error{
+    color:red;
+    text-align:center;
+    margin:15px 0;
+    font-weight:bold;
+}

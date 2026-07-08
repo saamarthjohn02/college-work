@@ -91,3 +91,9 @@ button:hover{
     text-decoration:none;
     color:#1565c0;
 }
+.error{
+    color:red;
+    text-align:center;
+    margin-bottom:15px;
+    font-weight:bold;
+}
