@@ -270,3 +270,28 @@ function App() {
 }
 
 export default App;*/
+/*import React from 'react';
+import Login from './component/Login';
+
+function App() {
+  return (
+    <div>
+      <Login />
+    </div>
+  );
+}
+
+export default App;*/
+/*import React from "react";
+import GetData from "./component/GetData";
+
+function App() {
+  return (
+    <div>
+      <h1>User Data</h1>
+      <GetData />
+    </div>
+  );
+}
+
+export default App;*/
