@@ -210,7 +210,7 @@ function App() {
 }
 
 export default App;*/
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+/*import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
@@ -242,7 +242,7 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
 /*import State from "./component/State";
 
 function App() {
@@ -295,3 +295,28 @@ function App() {
 }
 
 export default App;*/
+/*import React from 'react';
+import Login from './component/Login';
+
+function App() {
+  return (
+    <div>
+      <Login />
+    </div>
+  );
+}
+
+export default App;*/
+import React from "react";
+import GetData from "./component/GetData";
+
+function App() {
+  return (
+    <div>
+      <h1>User Data</h1>
+      <GetData />
+    </div>
+  );
+}
+
+export default App;
