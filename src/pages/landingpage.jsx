@@ -1,98 +1,3 @@
-/*import "./LandingPage.css";
-
-function LandingPage() {
-  return (
-    <>
-      <header className="navbar">
-        <h2>EduVault</h2>
-
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <div className="dropdown">
-  <button className="dropbtn">Login ▼</button>
-
-  <div className="dropdown-content">
-    <a href="/student-login">Student Login</a>
-    <a href="/teacher-login">Teacher Login</a>
-  </div>
-</div>
-        </nav>
-      </header>
-
-      <section className="hero">
-        <h1>Student Learning Portal</h1>
-
-        <p>
-          Access all your subject notes uploaded by your teachers anytime,
-          anywhere.
-        </p>
-
-        <div className="buttons">
-          <button>Student Login</button>
-          <button>Teacher Login</button>
-        </div>
-      </section>
-
-      <section className="features">
-        <h2>Why Choose EduVault?</h2>
-
-        <div className="cards">
-          <div className="card">
-            <h3>📚 Subject Notes</h3>
-            <p>Access notes for every subject in your semester.</p>
-          </div>
-
-          <div className="card">
-            <h3>👨‍🏫 Teacher Uploads</h3>
-            <p>Teachers can upload and organize notes easily.</p>
-          </div>
-
-          <div className="card">
-            <h3>⚡ Fast Access</h3>
-            <p>View and download notes with a single click.</p>
-          </div>
-
-          <div className="card">
-            <h3>🔒 Secure Login</h3>
-            <p>Separate student and teacher portals.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="subjects">
-        <h2>Subjects</h2>
-
-        <div className="subject-list">
-          <div>Programming in C</div>
-          <div>Java</div>
-          <div>DBMS</div>
-          <div>Web Development</div>
-          <div>Computer Networks</div>
-          <div>Operating Systems</div>
-        </div>
-      </section>
-
-      <section className="steps">
-        <h2>How It Works</h2>
-
-        <div className="step-box">
-          <div>1. Login</div>
-          <div>2. Select Subject</div>
-          <div>3. View Notes</div>
-          <div>4. Download</div>
-        </div>
-      </section>
-
-      <footer>
-        <p>© 2026 EduVault Student Portal</p>
-      </footer>
-    </>
-  );
-}
-
-export default LandingPage;*/
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
@@ -105,11 +10,11 @@ function LandingPage() {
 
         <nav>
 
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
 
-          <a href="#">About</a>
+          <a href="#about">About</a>
 
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
 
           <Link className="login-btn" to="/login">
             Login
@@ -119,7 +24,7 @@ function LandingPage() {
 
       </header>
 
-      <section className="hero">
+      <section id="home" className="hero">
 
         <h1>Student Learning Portal</h1>
 
@@ -127,6 +32,12 @@ function LandingPage() {
           Access all your subject notes uploaded by your teachers anytime,
           anywhere.
         </p>
+
+        <Link to="/login">
+          <button className="hero-btn">
+            Get Started
+          </button>
+        </Link>
 
       </section>
 
@@ -143,7 +54,7 @@ function LandingPage() {
 
           <div className="card">
             <h3>👨‍🏫 Teacher Uploads</h3>
-            <p>Teachers can upload notes anytime.</p>
+            <p>Teachers can upload and manage notes easily.</p>
           </div>
 
           <div className="card">
@@ -153,7 +64,7 @@ function LandingPage() {
 
           <div className="card">
             <h3>🔒 Secure Login</h3>
-            <p>Separate login for students and teachers.</p>
+            <p>Separate login portals for teachers and students.</p>
           </div>
 
         </div>
@@ -162,11 +73,11 @@ function LandingPage() {
 
       <section className="subjects">
 
-    <div className="subjects-container">
+        <div className="subjects-container">
 
-        <h2>Subjects</h2>
+          <h2>Subjects</h2>
 
-        <div className="subject-list">
+          <div className="subject-list">
 
             <div>Programming in C</div>
 
@@ -178,11 +89,11 @@ function LandingPage() {
 
             <div>Computer Networks</div>
 
+          </div>
+
         </div>
 
-    </div>
-
-</section>
+      </section>
 
       <section className="steps">
 
@@ -194,11 +105,69 @@ function LandingPage() {
 
           <div>2. Choose Subject</div>
 
-          <div>3. Open Notes</div>
+          <div>3. View Notes</div>
 
-          <div>4. Download</div>
+          <div>4. Download Notes</div>
 
         </div>
+
+      </section>
+
+      <section id="about" className="about">
+
+        <h2>About EduVault</h2>
+
+        <p className="about-text">
+          EduVault is a MERN Stack Student Portal designed to make sharing
+          study material between teachers and students simple, secure and
+          organized.
+        </p>
+
+        <div className="about-cards">
+
+          <div className="about-card">
+
+            <h3>👨‍🏫 Teachers</h3>
+
+            <p>
+              Upload, edit and delete notes for every subject.
+            </p>
+
+          </div>
+
+          <div className="about-card">
+
+            <h3>🎓 Students</h3>
+
+            <p>
+              Access and download notes uploaded by teachers.
+            </p>
+
+          </div>
+
+          <div className="about-card">
+
+            <h3>🔒 Secure Portal</h3>
+
+            <p>
+              Separate login portals keep teacher and student data secure.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="contact" className="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email : support@eduvault.com</p>
+
+        <p>Phone : +91 9876543210</p>
+
+        <p>Location : New Delhi, India</p>
 
       </section>
 

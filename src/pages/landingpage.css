@@ -301,3 +301,81 @@ footer{
     text-align:center;
     padding:20px;
 }
+html{
+    scroll-behavior:smooth;
+}
+
+.hero-btn{
+    margin-top:30px;
+    padding:14px 30px;
+    border:none;
+    background:#1565c0;
+    color:white;
+    font-size:17px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#0d47a1;
+}
+
+.about{
+    padding:80px 10%;
+    background:#f8f9fc;
+    text-align:center;
+}
+
+.about h2{
+    font-size:38px;
+    color:#1565c0;
+    margin-bottom:20px;
+}
+
+.about-text{
+    max-width:800px;
+    margin:0 auto 50px;
+    color:#555;
+    line-height:1.8;
+}
+
+.about-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.about-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+}
+
+.about-card h3{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.contact{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact h2{
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:17px;
+}
