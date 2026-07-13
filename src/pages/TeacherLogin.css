@@ -98,3 +98,13 @@ button:hover{
     font-size:15px;
     font-weight:bold;
 }
+.nav-link{
+    color:white;
+    text-decoration:none;
+    display:block;
+    width:100%;
+}
+
+.nav-link:hover{
+    color:white;
+}

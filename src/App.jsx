@@ -210,7 +210,7 @@ function App() {
 }
 
 export default App;*/
-/*import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
@@ -222,6 +222,7 @@ import StudentDashboard from "./pages/StudentDashboard";
 import TeacherDashboard from "./pages/TeacherDashboard";
 import UploadNotes from "./pages/UploadNotes";
 import Notes from "./pages/Notes";
+import MyNotes from "./pages/MyNotes";
 
 function App() {
   return (
@@ -237,12 +238,13 @@ function App() {
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
         <Route path="/upload-notes" element={<UploadNotes />} />
         <Route path="/notes" element={<Notes />} />
+        <Route path="/my-notes" element={<MyNotes />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;*/
+export default App;
 /*import State from "./component/State";
 
 function App() {
@@ -282,7 +284,7 @@ function App() {
 }
 
 export default App;*/
-import React from "react";
+/*import React from "react";
 import GetData from "./component/GetData";
 
 function App() {
@@ -294,4 +296,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
