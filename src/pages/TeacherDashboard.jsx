@@ -15,7 +15,11 @@ function TeacherDashboard() {
     📤 Upload Notes
   </Link>
 </li>
-          <li>📚 My Notes</li>
+          <li>
+  <Link to="/my-notes" className="nav-link">
+    📚 My Notes
+  </Link>
+</li>
           <li>📖 Subjects</li>
           <li>👤 Profile</li>
           <li>🚪 Logout</li>
